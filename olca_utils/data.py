@@ -6,10 +6,13 @@
 Data creation and building utilities.
 """
 
+import logging
 from typing import List, Tuple, Optional, Union
 import uuid
 import olca_schema as o
 import olca_ipc as ipc
+
+logger = logging.getLogger(__name__)
 
 
 class DataBuilder:

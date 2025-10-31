@@ -6,6 +6,14 @@
 Contribution analysis utilities.
 """
 
+import logging
+from dataclasses import dataclass
+from typing import List, Dict, Optional
+import olca_schema as o
+import olca_ipc as ipc
+
+logger = logging.getLogger(__name__)
+
 
 @dataclass
 class ContributionItem:
@@ -37,7 +45,7 @@ class ContributionAnalyzer:
     
     def get_process_contributions(
         self,
-        result: o.SimpleResult,
+        result,
         impact_category: o.Ref,
         min_share: float = 0.01
     ) -> List[ContributionItem]:
@@ -87,7 +95,7 @@ class ContributionAnalyzer:
     
     def get_flow_contributions(
         self,
-        result: o.SimpleResult,
+        result,
         impact_category: o.Ref,
         min_share: float = 0.01
     ) -> List[ContributionItem]:
@@ -132,7 +140,7 @@ class ContributionAnalyzer:
     
     def get_top_contributors(
         self,
-        result: o.SimpleResult,
+        result,
         impact_category: o.Ref,
         n: int = 5,
         contribution_type: str = 'process'
@@ -164,7 +172,7 @@ class ContributionAnalyzer:
     
     def get_contribution_summary(
         self,
-        result: o.SimpleResult,
+        result,
         impact_categories: Optional[List[o.Ref]] = None
     ) -> Dict[str, List[ContributionItem]]:
         """

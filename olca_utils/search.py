@@ -6,9 +6,12 @@
 Advanced search and discovery utilities.
 """
 
+import logging
 from typing import List, Optional, Iterator
 import olca_schema as o
 import olca_ipc as ipc
+
+logger = logging.getLogger(__name__)
 
 
 class SearchUtils:

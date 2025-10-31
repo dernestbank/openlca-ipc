@@ -6,9 +6,12 @@
 Results analysis and retrieval utilities.
 """
 
+import logging
 from typing import List, Dict, Optional
 import olca_schema as o
 import olca_ipc as ipc
+
+logger = logging.getLogger(__name__)
 
 
 class ResultsAnalyzer:
@@ -19,7 +22,7 @@ class ResultsAnalyzer:
     def __init__(self, client: ipc.Client):
         self.client = client
     
-    def get_total_impacts(self, result: o.SimpleResult) -> List[Dict]:
+    def get_total_impacts(self, result) -> List[Dict]:
         """
         Get all total impact results as dictionaries.
         

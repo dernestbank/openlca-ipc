@@ -6,8 +6,14 @@
 Monte Carlo simulation and uncertainty analysis.
 """
 
+import logging
 import numpy as np
-from typing import List, Dict, Optional
+from dataclasses import dataclass
+from typing import List, Dict, Optional, Any, Callable
+import olca_schema as o
+import olca_ipc as ipc
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass

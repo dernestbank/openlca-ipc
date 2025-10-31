@@ -6,9 +6,15 @@
 Export utilities for results and data.
 """
 
+import logging
 import csv
 import json
 from pathlib import Path
+from typing import List, Dict
+import olca_schema as o
+import olca_ipc as ipc
+
+logger = logging.getLogger(__name__)
 
 
 class ExportManager:
@@ -23,7 +29,7 @@ class ExportManager:
     
     def export_to_excel(
         self,
-        result: o.SimpleResult,
+        result,
         filepath: str
     ) -> bool:
         """

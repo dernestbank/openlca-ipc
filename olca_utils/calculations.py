@@ -8,9 +8,12 @@
 Calculation execution and management.
 """
 
+import logging
 from typing import Optional
 import olca_schema as o
 import olca_ipc as ipc
+
+logger = logging.getLogger(__name__)
 
 
 class CalculationManager:
@@ -26,7 +29,7 @@ class CalculationManager:
         system: o.Ref,
         impact_method: Optional[o.ImpactMethod] = None,
         amount: float = 1.0
-    ) -> o.SimpleResult:
+    ):
         """
         Perform a simple calculation.
         
@@ -66,7 +69,7 @@ class CalculationManager:
         system: o.Ref,
         impact_method: o.ImpactMethod,
         amount: float = 1.0
-    ) -> o.SimpleResult:
+    ):
         """Perform contribution analysis."""
         setup = o.CalculationSetup()
         setup.calculation_type = o.CalculationType.CONTRIBUTION_ANALYSIS

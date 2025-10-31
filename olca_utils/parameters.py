@@ -6,6 +6,13 @@
 Parameter management and scenario analysis.
 """
 
+import logging
+from typing import List, Dict, Optional
+import olca_schema as o
+import olca_ipc as ipc
+
+logger = logging.getLogger(__name__)
+
 
 class ParameterManager:
     """
