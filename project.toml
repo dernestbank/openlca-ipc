@@ -1,25 +1,21 @@
 # ============================================================================
 # pyproject.toml
 # ============================================================================
-"""
-Modern Python package configuration.
 
-Save this as: pyproject.toml
-"""
 
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "olca-utils"
-version = "1.0.0"
+name = "olca_utils"
+version = "0.1.0"
 description = "Professional utilities for openLCA IPC operations"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
 authors = [
-    {name = "LCA Team", email = "lca@example.com"}
+    {name = "SD2 Lab", email = "dernestbanksch@gmail.com"}
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -58,10 +54,10 @@ export = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/olca-utils"
+Homepage = "https://github.com/dernestbank/olca-utils"
 Documentation = "https://olca-utils.readthedocs.io"
-Repository = "https://github.com/yourusername/olca-utils"
-Issues = "https://github.com/yourusername/olca-utils/issues"
+Repository = "https://github.com/dernestbank/olca-utils"
+Issues = "https://github.com /dernestbank/olca-utils/issues"
 
 [tool.black]
 line-length = 88

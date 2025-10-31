@@ -1,12 +1,3 @@
-# ============================================================================
-# requirements.txt
-# ============================================================================
-"""
-Core dependencies for olca-utils.
-
-Save this as: requirements.txt
-"""
-
 # Core dependencies
 olca-ipc==2.4.0
 olca-schema==2.4.0

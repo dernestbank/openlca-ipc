@@ -6,9 +6,12 @@
 Product system creation and management.
 """
 
-from typing import Optional
+from typing import Optional, Union
+import logging
 import olca_schema as o
 import olca_ipc as ipc
+
+logger = logging.getLogger(__name__)
 
 
 class SystemBuilder:
