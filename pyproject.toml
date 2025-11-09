@@ -1,0 +1,89 @@
+# ============================================================================
+# pyproject.toml - Modern Python packaging configuration
+# ============================================================================
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openlca-ipc"
+version = "0.1.0"
+description = "A Python library for interacting with openLCA desktop application through the IPC protocol for life cycle assessment (LCA) workflows."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    {name = "Ernest Boakye Danquah", email = "dernestbanksch@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+keywords = ["openlca", "lca", "life-cycle-assessment", "ipc", "environmental-impact", "iso-14040", "iso-14044"]
+
+dependencies = [
+    "olca-ipc>=2.4.0",
+    "olca-schema>=2.4.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+full = [
+    "matplotlib>=3.7.0",
+    "pandas>=2.0.0",
+    "scipy>=1.10.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+viz = [
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+]
+export = [
+    "pandas>=2.0.0",
+    "openpyxl>=3.1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/dernestbank/openlca-ipc"
+Documentation = "https://github.com/dernestbank/openlca-ipc/tree/main/docs"
+Repository = "https://github.com/dernestbank/openlca-ipc"
+Issues = "https://github.com/dernestbank/openlca-ipc/issues"
+
+# Black configuration
+[tool.black]
+line-length = 88
+target-version = ['py310']
+include = '\.pyi?$'
+
+# isort configuration
+[tool.isort]
+profile = "black"
+line_length = 88
+
+# mypy configuration
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+# pytest configuration
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=openlca_ipc --cov-report=term-missing"

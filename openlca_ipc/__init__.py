@@ -6,14 +6,17 @@
 # ============================================================================
 
 """
-olca_utils: Professional utilities for openLCA IPC operations
+openlca_ipc: Professional utilities for openLCA IPC operations
 
 This package provides high-level utilities for working with openLCA through
 the IPC protocol, making LCA workflows easier and more maintainable.
+
+Based on olca-ipc 2.4.0 and olca-schema 2.4.0, this library follows
+ISO-14040/14044 standards for life cycle assessment (LCA) workflows.
 """
 
 __version__ = "0.1.0"
-__author__ = "SD2 Lab"
+__author__ = "Ernest Boakye Danquah"
 
 # Import core functionality
 try:

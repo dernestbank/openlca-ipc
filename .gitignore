@@ -82,5 +82,7 @@ dmypy.json
 results/
 outputs/
 
-# personal docs
+# Documentation build output (keep source docs in repo)
+docs/_build/
+docs/.doctrees/
 docs/

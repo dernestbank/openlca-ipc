@@ -1,7 +1,7 @@
 
 
 #%%
-from olca_utils import OLCAClient
+from openlca_ipc import OLCAClient
 
 # Initialize
 with OLCAClient(port=8080) as client:
@@ -35,7 +35,7 @@ result.dispose()
 
 #Example 2: Contribution Analysis
 
-from olca_utils import OLCAClient
+from openlca_ipc import OLCAClient
 
 client = OLCAClient(port=8080)
 
@@ -64,7 +64,7 @@ result.dispose()
 
 # Example 3: Monte Carlo with Plotting
 
-from olca_utils import OLCAClient
+from openlca_ipc import OLCAClient
 import matplotlib.pyplot as plt
 import numpy as np
 

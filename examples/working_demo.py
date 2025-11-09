@@ -4,13 +4,13 @@
 
 if __name__ == "__main__":
     """
-    Working demonstration that the olca_utils package can be imported and connected.
+    Working demonstration that the openlca_ipc package can be imported and connected.
     """
-    
-    from olca_utils import OLCAClient
+
+    from openlca_ipc import OLCAClient
     
     print("="*70)
-    print("OLCA_UTILS CONNECTION TEST")
+    print("OPENLCA_IPC CONNECTION TEST")
     print("="*70)
     
     try:
