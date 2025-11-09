@@ -81,3 +81,6 @@ dmypy.json
 *.csv
 results/
 outputs/
+
+# personal docs
+docs/

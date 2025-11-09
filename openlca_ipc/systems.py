@@ -49,11 +49,7 @@ class SystemBuilder:
         """
         try:
             # Pass the process object directly
-            system_ref = self.client.create_product_system(
-                process,
-                default_providers=default_providers,
-                preferred_type=preferred_type
-            )
+            system_ref = self.client.create_product_system(process)
             
             if system_ref and name:
                 # Update name if provided

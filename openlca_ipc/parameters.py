@@ -96,14 +96,10 @@ class ParameterManager:
             
             # Create setup with parameter redefinition
             setup = o.CalculationSetup()
-            setup.calculation_type = o.CalculationType.SIMPLE_CALCULATION
             setup.target = system
             setup.impact_method = impact_method.to_ref()
             setup.amount = 1.0
-            
-            # Add parameter redefinition
-            redef = self.create_parameter_redef(parameter_name, value, context)
-            setup.parameter_redefs = [redef]
+            setup.parameters = [self.create_parameter_redef(parameter_name, value, context)]
             
             # Calculate
             result = self.client.calculate(setup)

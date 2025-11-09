@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="olca-utils",
-    version="1.0.0",
+    name="openlca_ipc",
+    version="0.0.1",
     packages=find_packages(),
     install_requires=[
         "olca-ipc>=2.4.0",
@@ -16,9 +16,9 @@ setup(
             "scipy>=1.10.0",
         ]
     },
-    python_requires=">=3.8",
-    author="LCA Team",
-    description="Professional utilities for openLCA IPC operations",
+    python_requires=">=3.10",
+    author="Ernest Boakye Danquah",
+    description="A python package for interacting with the openLCA desktop app through the IPC protocol.",
     long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
 )

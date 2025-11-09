@@ -91,7 +91,6 @@ class UncertaintyAnalyzer:
         """
         # Create simulation setup
         setup = o.CalculationSetup()
-        setup.calculation_type = o.CalculationType.MONTE_CARLO_SIMULATION
         setup.target = system
         setup.impact_method = impact_method.to_ref()
         setup.amount = amount

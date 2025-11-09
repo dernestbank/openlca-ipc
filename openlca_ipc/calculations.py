@@ -51,7 +51,6 @@ class CalculationManager:
             >>> result.dispose()
         """
         setup = o.CalculationSetup()
-        setup.calculation_type = o.CalculationType.SIMPLE_CALCULATION
         setup.target = system
         setup.amount = amount
         
@@ -72,7 +71,6 @@ class CalculationManager:
     ):
         """Perform contribution analysis."""
         setup = o.CalculationSetup()
-        setup.calculation_type = o.CalculationType.CONTRIBUTION_ANALYSIS
         setup.target = system
         setup.impact_method = impact_method.to_ref()
         setup.amount = amount
