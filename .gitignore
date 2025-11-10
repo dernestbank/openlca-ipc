@@ -88,3 +88,4 @@ docs/.doctrees/
 docs/
 .claude 
 docs
+.pypirc
