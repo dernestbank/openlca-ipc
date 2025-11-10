@@ -5,6 +5,9 @@ A comprehensive Python library for interacting with openLCA desktop application 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![openLCA](https://img.shields.io/badge/openLCA-2.x-orange.svg)](https://www.openlca.org/)
+[![DOI](https://zenodo.org/badge/1082686834.svg)](https://doi.org/10.5281/zenodo.17567634)
+
+You can cite all versions by using the DOI 10.5281/zenodo.17567634. This DOI represents all versions, and will always resolve to the latest one.
 
 ## Features
 
