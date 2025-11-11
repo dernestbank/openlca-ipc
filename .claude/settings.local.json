@@ -7,7 +7,8 @@
       "Bash(findstr:*)",
       "Bash(pip uninstall:*)",
       "Bash(pip install:*)",
-      "Bash(twine check:*)"
+      "Bash(twine check:*)",
+      "Bash(echo:*)"
     ],
     "deny": [],
     "ask": []

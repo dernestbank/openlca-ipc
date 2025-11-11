@@ -18,6 +18,7 @@ You can cite all versions by using the DOI 10.5281/zenodo.17567634. This DOI rep
 - **Scenario Analysis** - Parameter sensitivity and scenario comparison
 - **Export Utilities** - CSV and Excel export for results
 - **AI Agent Friendly** - Clear documentation and structured outputs for automation
+- **MCP Server** - Model Context Protocol server for n8n and AI workflow automation
 - **ISO Compliant** - Follows ISO-14040/14044 LCA standards
 
 ## Installation
@@ -224,6 +225,28 @@ print(df)
 client.export.export_comparison_to_csv(scenarios, 'scenario_results.csv')
 ```
 
+## AI Agent Automation (NEW!)
+
+Automate LCA workflows with AI agents using the included **MCP (Model Context Protocol) server**:
+
+```python
+# For AI agents in n8n, Claude Desktop, or other MCP-compatible tools
+# The MCP server exposes 15+ LCA tools organized by ISO phases:
+
+Phase 1 (Goal & Scope): search_flows, search_impact_methods, find_providers
+Phase 2 (LCI): create_product_flow, create_process, create_product_system
+Phase 3 (LCIA): calculate_impacts, get_inventory_results
+Phase 4 (Interpretation): analyze_contributions, export_results
+
+# See mcp-server/ directory for complete setup
+```
+
+**Quick Start with n8n:**
+1. Install MCP server: `cd mcp-server && pip install -r requirements.txt`
+2. Configure in n8n: See [mcp-server/docs/n8n-integration.md](mcp-server/docs/n8n-integration.md)
+3. Import workflow: `mcp-server/examples/n8n-workflows/basic_lca_workflow.json`
+4. Automate LCA! 🤖
+
 ## Module Overview
 
 The library is organized into specialized modules:
@@ -298,6 +321,8 @@ client = OLCAClient(port=8080)
 - **[Setup Guide](docs/setup.md)** - Detailed installation and configuration
 - **[Examples](examples/)** - Working example scripts and Jupyter notebooks
 - **[API Reference](docs/about_package.md)** - Module structure and API details
+- **[Complete Documentation](docs/index.md)** - Full documentation hub
+- **[MCP Server](mcp-server/README.md)** - AI agent automation with n8n
 
 ## Requirements
 
