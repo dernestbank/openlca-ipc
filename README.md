@@ -1,5 +1,5 @@
 # openLCA IPC Python Library
-
+![alt text](assets/imagebanner1.png)
 A comprehensive Python library for interacting with openLCA desktop application through the IPC (Inter-Process Communication) protocol. Built for life cycle assessment (LCA) workflows based on ISO-14040/14044 standards.
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
