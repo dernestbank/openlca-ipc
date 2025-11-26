@@ -87,6 +87,7 @@ docs/_build/
 docs/.doctrees/
 docs/
 docs
+docs-local
 .claude 
 docs
 .pypirc
