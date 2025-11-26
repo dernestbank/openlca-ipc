@@ -318,11 +318,11 @@ client = OLCAClient(port=8080)
 
 ## Documentation
 
-- **[Setup Guide](docs/setup.md)** - Detailed installation and configuration
+- **[Setup Guide](documentation/installation.md)** - Detailed installation and configuration
 - **[Examples](examples/)** - Working example scripts and Jupyter notebooks
-- **[API Reference](docs/about_package.md)** - Module structure and API details
-- **[Complete Documentation](docs/index.md)** - Full documentation hub
-- **[MCP Server](mcp-server/README.md)** - AI agent automation with n8n
+- **[API Reference](documentation/api/README.md)** - Module structure and API details
+- **[Complete Documentation](documentation/index.md)** - Full documentation hub
+- **[MCP Server](mcp-server/README.md)** - For AI agent automation 
 
 ## Requirements
 
@@ -435,7 +435,7 @@ If you use this library in your research, please cite:
 
 ```bibtex
 @software{openlca_ipc,
-  author = {Danquah, Ernest Boakye},
+  author = {Danquah Boakye, Ernest},
   title = {openLCA IPC Python Library},
   year = {2025},
   url = {https://github.com/dernestbank/openlca-ipc}
