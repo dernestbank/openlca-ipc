@@ -451,7 +451,7 @@ If you use this library in your research, please cite:
 ## Support
 
 - **Issues**: [GitHub Issues](https://github.com/dernestbank/openlca-ipc/issues)
-- **Documentation**: [Read the Docs](https://github.com/dernestbank/openlca-ipc/tree/main/docs)
+- **Documentation**: [Read the Docs](https://github.com/dernestbank/openlca-ipc/documentation/DOCUMENTATION_MAP.md)
 - **Email**: dernestbanksch@gmail.com
 
 ---
