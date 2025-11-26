@@ -8,9 +8,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "openlca-ipc"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Python library for interacting with openLCA desktop application through the IPC protocol for life cycle assessment (LCA) workflows."
-readme = "README.md"
+readme = "README-pypi.md"
 requires-python = ">=3.10"
 license = "MIT"
 authors = [
