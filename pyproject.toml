@@ -12,7 +12,7 @@ version = "0.1.1"
 description = "A Python library for interacting with openLCA desktop application through the IPC protocol for life cycle assessment (LCA) workflows."
 readme = "README-pypi.md"
 requires-python = ">=3.10"
-license = "MIT"
+license = { text = "MIT" }
 authors = [
     {name = "Ernest Boakye Danquah", email = "dernestbanksch@gmail.com"}
 ]

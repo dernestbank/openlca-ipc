@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="openlca-ipc",
-    version="0.1.0",
+    version="0.1.1",
     packages=find_packages(),
     install_requires=[
         "olca-ipc>=2.4.0",
@@ -20,7 +20,7 @@ setup(
     author="Ernest Boakye Danquah",
     author_email="dernestbanksch@gmail.com",
     description="A Python library for interacting with openLCA desktop application through the IPC protocol for life cycle assessment (LCA) workflows.",
-    long_description=open("README.md", "r", encoding="utf-8").read(),
+    long_description=open("README-pypi.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/dernestbank/openlca-ipc",
     license="MIT",
